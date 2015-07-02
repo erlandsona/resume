@@ -1,0 +1,17 @@
+@import 'bourbon/bourbon'
+@import 'normalize'
+@import 'base/base'
+@import 'neat/neat'
+
+main
+  +outer-container
+  height: 700px
+  background-color: $light-gray
+
+  section
+    +span-columns(6)
+    img
+      border-radius: 0% 0% 0% 90%/60%
+      float: right
+      width: 200px
+
