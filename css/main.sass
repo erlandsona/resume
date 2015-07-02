@@ -1,17 +1,60 @@
 @import 'bourbon/bourbon'
 @import 'normalize'
-@import 'base/base'
 @import 'neat/neat'
+@import 'base/base'
+
+// body
+//   width: 100%
+//   margin: 0
+//   float: none
+
 
 main
   +outer-container
-  height: 700px
   background-color: $light-gray
 
-  section
+  header
     +span-columns(6)
-    img
-      border-radius: 0% 0% 0% 90%/60%
-      float: right
-      width: 200px
+    +shift(3)
+    text-align: center
+    margin-bottom: 4em
+
+  section
+    +outer-container
+
+    .first
+      +span-columns(6)
+      margin-top: 2em
+
+
+    article
+      +span-columns(5, block-collapse)
+      +shift(3)
+      margin-top: 2em
+      & ~ article
+        +shift(4)
+      ul
+        margin-left: 1em
+        list-style-type: disc
+        ul
+          list-style-type: circle
+          margin-left: 1em
+          ul
+            list-style-type: square
+
+    aside
+      +span-columns(1)
+      +omega
+      margin-top: 2em
+
+      &.right
+        +span-columns(3)
+        +omega
+        float: right
+        text-align: right
+
+  img
+    border-radius: 0% 0% 0% 90%/60%
+    float: right
+    width: 200px
 
