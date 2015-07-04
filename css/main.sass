@@ -9,11 +9,14 @@ html, body
 
 body
   +outer-container
+  background-image: url('assets/trials_and_tribulations_by_dazzle_textures.jpg')
+  font: 11px $base-font-family
 
   header
     +outer-container
     text-align: right
     font-family: $heading-font-family
+    margin-top: 1em
     img
       +span-columns(2)
       border-radius: 0% 0% 90%/60% 0%
@@ -32,10 +35,10 @@ body
       margin-top: 3em
       div
         display: inline-block
-        padding: 0em 3em
+        padding: 0em 4em
         margin: 1em 0em
         & ~ div
-          border-left: 0.1em solid
+          border-left: $base-border
 
   main
     +outer-container
@@ -50,22 +53,32 @@ body
       margin-right: 0px
       article
         +span-columns(8 of 8)
-        +direction-context(right-to-left)
         section
           +span-columns(6 of 8)
-          +omega
         aside
           +span-columns(2 of 8)
           +omega
           white-space: nowrap
-          text-align: right
+          direction: rtl
+          text-align: center
 
 
     section:last-of-type
       +span-columns(12)
+      article
+        +span-columns(12 of 12)
+        section
+          +span-columns(9 of 12)
+        aside
+          +span-columns(3 of 12)
+          +omega
+          direction: rtl
+          white-space: nowrap
+          text-align: right
 
   footer
     +outer-container
+    margin: 3em 0em
     section
       +span-columns(12)
       text-align: center
@@ -73,57 +86,10 @@ body
         padding: 0em 3em
         margin: 1em 0em
         &:last-of-type
-          border-left: 0.1em solid
+          border-left: $base-border
         img
           width: $base-font-size
-          margin-bottom: -0.1em
+          margin-bottom: -0.07em
       span:last-of-type
         img
-          margin-bottom: -0.05em
-
-// main
-//   +outer-container
-//   background-color: $medium-gray
-
-//   header
-//     img
-//       +span-columns(4)
-//       border-radius: 0% 0% 90%/60% 0%
-//       width: 200px
-//     & ~ *
-//       +span-columns(8)
-//       text-align: right
-
-//   section
-//     +outer-container
-
-//     .first
-//       +span-columns(6)
-//       margin-top: 2em
-
-
-//     article
-//       +span-columns(5, block-collapse)
-//       +shift(3)
-//       margin-top: 2em
-//       & ~ article
-//         +shift(4)
-//       ul
-//         margin-left: 1em
-//         list-style-type: disc
-//         ul
-//           list-style-type: circle
-//           margin-left: 1em
-//           ul
-//             list-style-type: square
-
-//     aside
-//       +span-columns(1)
-//       +omega
-//       margin-top: 2em
-
-//       &.right
-//         +span-columns(3)
-//         +omega
-//         text-align: right
-
+          margin-bottom: -0.06em
