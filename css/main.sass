@@ -3,58 +3,127 @@
 @import 'neat/neat'
 @import 'base/base'
 
-// body
-//   width: 100%
-//   margin: 0
-//   float: none
+html, body
+  margin: 0px
+  padding: 0px
 
-
-main
+body
   +outer-container
-  background-color: $light-gray
 
   header
-    +span-columns(6)
-    +shift(3)
-    text-align: center
-    margin-bottom: 4em
-
-  section
     +outer-container
-
-    .first
-      +span-columns(6)
-      margin-top: 2em
-
-
-    article
-      +span-columns(5, block-collapse)
-      +shift(3)
-      margin-top: 2em
-      & ~ article
-        +shift(4)
-      ul
-        margin-left: 1em
-        list-style-type: disc
-        ul
-          list-style-type: circle
-          margin-left: 1em
-          ul
-            list-style-type: square
-
-    aside
-      +span-columns(1)
+    text-align: right
+    font-family: $heading-font-family
+    img
+      +span-columns(2)
+      border-radius: 0% 0% 90%/60% 0%
+    h1, h2
+      +span-columns(10)
       +omega
-      margin-top: 2em
+    h2
+      font-family: $base-font-family
+      font-style: italic
+      font-size: medium
+    section
+      +span-columns(10)
+      +omega
+      text-align: center
+      font-family: $base-font-family
+      margin-top: 3em
+      div
+        display: inline-block
+        padding: 0em 3em
+        margin: 1em 0em
+        & ~ div
+          border-left: 0.1em solid
 
-      &.right
-        +span-columns(3)
-        +omega
-        float: right
-        text-align: right
+  main
+    +outer-container
+    ul
+      @extend %default-ul
 
-  img
-    border-radius: 0% 0% 0% 90%/60%
-    float: right
-    width: 200px
+    section:first-of-type
+      +span-columns(4)
+
+    section:nth-of-type(2)
+      +span-columns(8)
+      margin-right: 0px
+      article
+        +span-columns(8 of 8)
+        +direction-context(right-to-left)
+        section
+          +span-columns(6 of 8)
+          +omega
+        aside
+          +span-columns(2 of 8)
+          +omega
+          white-space: nowrap
+          text-align: right
+
+
+    section:last-of-type
+      +span-columns(12)
+
+  footer
+    +outer-container
+    section
+      +span-columns(12)
+      text-align: center
+      span
+        padding: 0em 3em
+        margin: 1em 0em
+        &:last-of-type
+          border-left: 0.1em solid
+        img
+          width: $base-font-size
+          margin-bottom: -0.1em
+      span:last-of-type
+        img
+          margin-bottom: -0.05em
+
+// main
+//   +outer-container
+//   background-color: $medium-gray
+
+//   header
+//     img
+//       +span-columns(4)
+//       border-radius: 0% 0% 90%/60% 0%
+//       width: 200px
+//     & ~ *
+//       +span-columns(8)
+//       text-align: right
+
+//   section
+//     +outer-container
+
+//     .first
+//       +span-columns(6)
+//       margin-top: 2em
+
+
+//     article
+//       +span-columns(5, block-collapse)
+//       +shift(3)
+//       margin-top: 2em
+//       & ~ article
+//         +shift(4)
+//       ul
+//         margin-left: 1em
+//         list-style-type: disc
+//         ul
+//           list-style-type: circle
+//           margin-left: 1em
+//           ul
+//             list-style-type: square
+
+//     aside
+//       +span-columns(1)
+//       +omega
+//       margin-top: 2em
+
+//       &.right
+//         +span-columns(3)
+//         +omega
+//         text-align: right
 
