@@ -8,55 +8,61 @@ html
     link(rel='stylesheet', href='main.css', type='text/css', media='screen', title='no title', charset='utf-8')
     link(href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css')
   body
+
     header
       img(src='assets/portfolio_pic_smile_6-26-5.jpg', alt="Austin's Headshot")
       h1 Austin Erlandson
-      h2 Full Stack Software Developer
-      section
-        div austin.erlandson.com
-        div austin@erlandson.com
-        div (541) 420-1760
+      article
+        h2 Full Stack Software Developer
+        section
+          div austin.erlandson.com
+          div austin@erlandson.com
+          div (541) 420-1760
     hr
+
     main
-      section
+      section.left
         article
           h2 Languages
           ul
-            li HTML/JADE/HAML
-            li CSS/SASS/SCSS
-            li JS/ES6
+            li HTML, JADE, HAML
+            li CSS, SASS, SCSS
+            li JS, ES6
             li RUBY
         article
-          h2 Frameworks/Libraries
-          h3 CSS
+          h2 Frameworks, Libraries
+          div
+            strong CSS
           ul
-            li Bourbon/Neat/Bitters/Refills
+            li Bourbon, Neat, Bitters, Refills
             li Bootstrap
             li Foundation
-            li Jeet
-            li Skeleton
-            li Min
-          h3 JS
+          div
+            strong JS
           ul
             li AngularJS
             li jQuery
             li RecordRTC
             li Chrome Packaged Apps
             li Web Audio API
-          h3 Ruby
+          div
+            strong Ruby
           ul
             li Rails
+            li CarrierWave, Devise, Fabrication, Faker, Figaro, Fog
         article
           h2 Tools
           ul
-            li Vim: Plugins/Key Bindings/Text Objects
-            li Bash-It: Plugins/Auto Completion
-            li Gulp/Grunt/Rake/Yeoman
-            li NVM/RVM
-            li NPM/Bundler/Bower
-            li Git/Github/Bitbucket
-            li Mocha/Chai/Rspec/Caminari
-      section
+            li Vim
+            li Bash-It
+            li Gulp, Grunt, Rake, Yeoman
+            li NVM, RVM
+            li NPM, Bower, Bundler
+            li Git, Github, Bitbucket
+            li Mocha, Chai, BrowserSync
+            li Rspec, Guard
+
+      section.right
         article
           h2 Professional Experience
           section
@@ -64,9 +70,9 @@ html
               strong Apprentice Web Developer
               | , Nashville Software School
             ul
-              li 6-month 40hr/wk immersion program with a focus on collaborative test-driven development
-              li Everything from wireframing and executing basic static site designs to
-                | starting up a new rails application and building from the server side up
+              li 6-month immersion program focused on collaborative TDD
+              li Wireframing and executing basic static site designs
+              li Starting new rails applications and building from the server side up
           aside
             time(datetime='2015-01') January '15 - 
             time(datetime='2015-06') June '15
@@ -75,9 +81,9 @@ html
               strong Technical Startup Consultant
               | , Power of Clean Energy
             ul
-              li conducted audits on industrial facilities
-              li set up project management software to facilitate more effective work flow
-              li trained new employees in auditing software and creating proposals.
+              li Conducted audits on industrial facilities
+              li Set up PM software facilitating a more efficient work flow
+              li Trained new employees in auditing software and creating proposals.
           aside
             time(datetime='2014-08') August '14 - 
             time(datetime='2015-02') February '15
@@ -86,16 +92,13 @@ html
               strong Wholesale Dealer
               | , Southwestern Advantage
             ul
-              li Learned 80hr/wk scheduling habits
-              li Learned customer relations through direct sales
-              li Maintained finances daily using a business and records form
+              li Maintained 80hr/wk work schedule
+              li Managed customer relations through direct sales
               li Participated in group marketing meetings
           aside
             time(datetime='2013-05') May '13 - 
             time(datetime='2013-08') August '13
-            br
-            | &
-            br
+            div &
             time(datetime='2014-05') May '14 - 
             time(datetime='2014-08') August '14
         article
@@ -106,20 +109,20 @@ html
               | , audilogue.herokuapp.com
             ul
               li Ruby on Rails back-end with HAML templating
-              li Utilizing the Web Audio API through the RecordRTC library
+              li Utilized the Web Audio API through the RecordRTC library
           section
             div
               strong Serial Visualizer
               | , built to test serial data from a midi controller
             ul
               li Chrome Packaged App built on AngularJS with D3
-              li Utilizing the Chrome Serial API and svg
+              li Utilized the Chrome Serial API and svg
           section
             div
               strong Battlewhich
               | , github.com/erlandsona/battlewhich
             ul
-              li Little Battleship game utilizing jQuery, Bootstrap, and Lodash
+              li Created Battleship game utilizing jQuery, Bootstrap, and Lodash
         article
           h2 Education
           section
@@ -133,36 +136,28 @@ html
             time(datetime='2010-08') August '10
             |  - 
             time(datetime='2014-05') May '14
-      section
+
+      section.bottom
         article
-          h3 Community Involvement
+          h2 Community Involvement
           section
             div
               strong SLIPABEAT
               | , HackTN7
             ul
-              li
-                | Built a Chrome Packaged App utilizing the Chrome Serial API
-                br
-                | to create a web-based music sampler/drum machine.
-              li Learned about C programming with Arduino libraries.
+              li Built a Chrome Packaged App utilizing the Chrome Serial API to create a web-based music sampler.
+              li Utilized the C language with Arduino libraries to create a hardware drum machine.
           aside
             time(datetime='2015-05') May '15
           section
-            strong Meetups: 
-            ul
-              li
-                | NashJS, 
-                | Ruby for Beginners, 
-                | Nash.rb, 
-                | Nashville Vim,
-                br
-                | Code for Nashville,
-                | Nashville Creative Coders.
+            div
+              strong Meetups:
+              |  NashJS, Ruby for Beginners, Nash.rb, Nashville Vim, Code for Nashville, Nashville Creative Coders.
           aside
             time(datetime='2015-01') January '15
             |  - 
             time(datetime='2015-07-02 15:21') Now
+
     footer
       section
         span

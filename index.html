@@ -11,37 +11,36 @@
   <body>
     <header><img src="assets/portfolio_pic_smile_6-26-5.jpg" alt="Austin's Headshot">
       <h1>Austin Erlandson</h1>
-      <h2>Full Stack Software Developer</h2>
-      <section>
-        <div>austin.erlandson.com</div>
-        <div>austin@erlandson.com</div>
-        <div>(541) 420-1760</div>
-      </section>
+      <article>
+        <h2>Full Stack Software Developer</h2>
+        <section>
+          <div>austin.erlandson.com</div>
+          <div>austin@erlandson.com</div>
+          <div>(541) 420-1760</div>
+        </section>
+      </article>
     </header>
     <hr>
     <main>
-      <section>
+      <section class="left">
         <article>
           <h2>Languages</h2>
           <ul>
-            <li>HTML/JADE/HAML</li>
-            <li>CSS/SASS/SCSS</li>
-            <li>JS/ES6</li>
+            <li>HTML, JADE, HAML</li>
+            <li>CSS, SASS, SCSS</li>
+            <li>JS, ES6</li>
             <li>RUBY</li>
           </ul>
         </article>
         <article>
-          <h2>Frameworks/Libraries</h2>
-          <h3>CSS</h3>
+          <h2>Frameworks, Libraries</h2>
+          <div><strong>CSS</strong></div>
           <ul>
-            <li>Bourbon/Neat/Bitters/Refills</li>
+            <li>Bourbon, Neat, Bitters, Refills</li>
             <li>Bootstrap</li>
             <li>Foundation</li>
-            <li>Jeet</li>
-            <li>Skeleton</li>
-            <li>Min</li>
           </ul>
-          <h3>JS</h3>
+          <div><strong>JS</strong></div>
           <ul>
             <li>AngularJS</li>
             <li>jQuery</li>
@@ -49,35 +48,35 @@
             <li>Chrome Packaged Apps</li>
             <li>Web Audio API</li>
           </ul>
-          <h3>Ruby</h3>
+          <div><strong>Ruby</strong></div>
           <ul>
             <li>Rails</li>
+            <li>CarrierWave, Devise, Fabrication, Faker, Figaro, Fog</li>
           </ul>
         </article>
         <article>
           <h2>Tools</h2>
           <ul>
-            <li>Vim: Plugins/Key Bindings/Text Objects</li>
-            <li>Bash-It: Plugins/Auto Completion</li>
-            <li>Gulp/Grunt/Rake/Yeoman</li>
-            <li>NVM/RVM</li>
-            <li>NPM/Bundler/Bower</li>
-            <li>Git/Github/Bitbucket</li>
-            <li>Mocha/Chai/Rspec/Caminari</li>
+            <li>Vim</li>
+            <li>Bash-It</li>
+            <li>Gulp, Grunt, Rake, Yeoman</li>
+            <li>NVM, RVM</li>
+            <li>NPM, Bower, Bundler</li>
+            <li>Git, Github, Bitbucket</li>
+            <li>Mocha, Chai, BrowserSync</li>
+            <li>Rspec, Guard</li>
           </ul>
         </article>
       </section>
-      <section>
+      <section class="right">
         <article>
           <h2>Professional Experience</h2>
           <section>
             <div><strong>Apprentice Web Developer</strong>, Nashville Software School</div>
             <ul>
-              <li>6-month 40hr/wk immersion program with a focus on collaborative test-driven development</li>
-              <li>
-                Everything from wireframing and executing basic static site designs to
-                starting up a new rails application and building from the server side up
-              </li>
+              <li>6-month immersion program focused on collaborative TDD</li>
+              <li>Wireframing and executing basic static site designs</li>
+              <li>Starting new rails applications and building from the server side up</li>
             </ul>
           </section>
           <aside>
@@ -87,9 +86,9 @@
           <section>
             <div><strong>Technical Startup Consultant</strong>, Power of Clean Energy</div>
             <ul>
-              <li>conducted audits on industrial facilities</li>
-              <li>set up project management software to facilitate more effective work flow</li>
-              <li>trained new employees in auditing software and creating proposals.</li>
+              <li>Conducted audits on industrial facilities</li>
+              <li>Set up PM software facilitating a more efficient work flow</li>
+              <li>Trained new employees in auditing software and creating proposals.</li>
             </ul>
           </section>
           <aside>
@@ -99,15 +98,15 @@
           <section>
             <div><strong>Wholesale Dealer</strong>, Southwestern Advantage</div>
             <ul>
-              <li>Learned 80hr/wk scheduling habits</li>
-              <li>Learned customer relations through direct sales</li>
-              <li>Maintained finances daily using a business and records form</li>
+              <li>Maintained 80hr/wk work schedule</li>
+              <li>Managed customer relations through direct sales</li>
               <li>Participated in group marketing meetings</li>
             </ul>
           </section>
           <aside>
             <time datetime="2013-05">May '13 - </time>
-            <time datetime="2013-08">August '13</time><br>&<br>
+            <time datetime="2013-08">August '13</time>
+            <div>&</div>
             <time datetime="2014-05">May '14 - </time>
             <time datetime="2014-08">August '14</time>
           </aside>
@@ -118,20 +117,20 @@
             <div><strong>Audilogue</strong>, audilogue.herokuapp.com</div>
             <ul>
               <li>Ruby on Rails back-end with HAML templating</li>
-              <li>Utilizing the Web Audio API through the RecordRTC library</li>
+              <li>Utilized the Web Audio API through the RecordRTC library</li>
             </ul>
           </section>
           <section>
             <div><strong>Serial Visualizer</strong>, built to test serial data from a midi controller</div>
             <ul>
               <li>Chrome Packaged App built on AngularJS with D3</li>
-              <li>Utilizing the Chrome Serial API and svg</li>
+              <li>Utilized the Chrome Serial API and svg</li>
             </ul>
           </section>
           <section>
             <div><strong>Battlewhich</strong>, github.com/erlandsona/battlewhich</div>
             <ul>
-              <li>Little Battleship game utilizing jQuery, Bootstrap, and Lodash</li>
+              <li>Created Battleship game utilizing jQuery, Bootstrap, and Lodash</li>
             </ul>
           </section>
         </article>
@@ -150,29 +149,21 @@
           </aside>
         </article>
       </section>
-      <section>
+      <section class="bottom">
         <article>
-          <h3>Community Involvement</h3>
+          <h2>Community Involvement</h2>
           <section>
             <div><strong>SLIPABEAT</strong>, HackTN7</div>
             <ul>
-              <li>Built a Chrome Packaged App utilizing the Chrome Serial API<br>to create a web-based music sampler/drum machine.</li>
-              <li>Learned about C programming with Arduino libraries.</li>
+              <li>Built a Chrome Packaged App utilizing the Chrome Serial API to create a web-based music sampler.</li>
+              <li>Utilized the C language with Arduino libraries to create a hardware drum machine.</li>
             </ul>
           </section>
           <aside>
             <time datetime="2015-05">May '15</time>
           </aside>
-          <section><strong>Meetups: </strong>
-            <ul>
-              <li>
-                NashJS, 
-                Ruby for Beginners, 
-                Nash.rb, 
-                Nashville Vim,<br>Code for Nashville,
-                Nashville Creative Coders.
-              </li>
-            </ul>
+          <section>
+            <div><strong>Meetups:</strong> NashJS, Ruby for Beginners, Nash.rb, Nashville Vim, Code for Nashville, Nashville Creative Coders.</div>
           </section>
           <aside>
             <time datetime="2015-01">January '15</time> - 

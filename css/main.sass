@@ -9,48 +9,68 @@ html, body
 
 body
   +outer-container
-  background-image: url('assets/trials_and_tribulations_by_dazzle_textures.jpg')
+  padding-top: 0.7em
+  background-image: url('assets/Newsprint.jpg')
+  background-color: #886
+  background-blend-mode: hard-light
   font: 11px $base-font-family
 
   header
     +outer-container
     text-align: right
-    font-family: $heading-font-family
-    margin-top: 1em
     img
       +span-columns(2)
       border-radius: 0% 0% 90%/60% 0%
-    h1, h2
-      +span-columns(10)
-      +omega
-    h2
-      font-family: $base-font-family
-      font-style: italic
-      font-size: medium
-    section
-      +span-columns(10)
-      +omega
-      text-align: center
-      font-family: $base-font-family
-      margin-top: 3em
-      div
-        display: inline-block
-        padding: 0em 4em
-        margin: 1em 0em
-        & ~ div
-          border-left: $base-border
+    h1
+      font-size: 4.3em
+      margin: 0
+    article
+      +outer-container
+      position: relative
+      h2
+        +span-columns(10)
+        +omega
+        margin: 0
+        font-family: $base-font-family
+        font-style: italic
+        position: absolute
+        right: 0%
+        top: 40%
+        transform: translate(0, -50%)
+      section
+        +span-columns(12)
+        +omega
+        text-align: right
+        font-family: $base-font-family
+        position: absolute
+        right: 0%
+        bottom: 0%
+        div
+          display: inline-block
+          padding: 0em 7em
+          &:last-of-type
+            padding-right: 0em
+          & ~ div
+            border-left: $base-border
 
   main
     +outer-container
     ul
-      @extend %default-ul
+      line-height: 1.5
 
-    section:first-of-type
-      +span-columns(4)
+    section.left
+      +span-columns(3)
+      margin-right: 0em
+      width: 25.59%
 
-    section:nth-of-type(2)
-      +span-columns(8)
+    section.right
+      +span-columns(9)
       margin-right: 0px
+      border-left: $base-border
+      padding-left: 1em
+      ul
+        line-height: 1.7
+
       article
         +span-columns(8 of 8)
         section
@@ -60,17 +80,21 @@ body
           +omega
           white-space: nowrap
           direction: rtl
-          text-align: center
+          text-align: right
+          div
+            text-align: center
 
-
-    section:last-of-type
+    section.bottom
       +span-columns(12)
+      border-top: $base-border
+      padding-top: 0.5em
+      margin-top: 1em
       article
         +span-columns(12 of 12)
         section
-          +span-columns(9 of 12)
+          +span-columns(10 of 12)
         aside
-          +span-columns(3 of 12)
+          +span-columns(2 of 12)
           +omega
           direction: rtl
           white-space: nowrap
@@ -78,7 +102,12 @@ body
 
   footer
     +outer-container
-    margin: 3em 0em
+    margin: 4em 0em 1.2em 0em
+    position:fixed
+    left: 0px
+    bottom: 0px
+    height: 30px
+    width: 100%
     section
       +span-columns(12)
       text-align: center

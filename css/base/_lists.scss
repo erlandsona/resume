@@ -3,6 +3,13 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: $small-spacing / 4;
+  margin-bottom: $small-spacing;
+  padding-left: 1.5em;
+  text-indent: -1em;
+  li:before {
+    content: "─ ";
+  }
 
   &%default-ul {
     list-style-type: disc;
